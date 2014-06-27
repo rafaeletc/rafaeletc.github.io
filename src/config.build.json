@@ -1,7 +1,6 @@
 {
   "locals": {
     "url": "http://rafaeletc.github.io",
-    "output": "../",
     "name": "rafaeletc",
     "owner": "Rafael etc",
     "description": "nascido no século passado"
@@ -25,5 +24,6 @@
   },
   "paginator": {
     "perPage": 3
-  }
+  },
+  "output": "../"
 }

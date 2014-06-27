@@ -1,7 +1,6 @@
 {
   "locals": {
     "url": "http://localhost:8080",
-    "output": "../",
     "name": "rafaeletc",
     "owner": "Rafael etc",
     "description": "Ramblings of an immor(t)al demigod"
