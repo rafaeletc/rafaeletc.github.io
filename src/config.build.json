@@ -1,0 +1,29 @@
+{
+  "locals": {
+    "url": "http://rafaeletc.github.io",
+    "output": "../",
+    "name": "rafaeletc",
+    "owner": "Rafael etc",
+    "description": "nascido no século passado"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-stylus",
+    "wintersmith-jade"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}

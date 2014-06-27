@@ -1,0 +1,29 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "output": "../",
+    "name": "rafaeletc",
+    "owner": "Rafael etc",
+    "description": "Ramblings of an immor(t)al demigod"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-stylus",
+    "wintersmith-jade"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
