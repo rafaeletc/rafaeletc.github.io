@@ -10,16 +10,11 @@ block header
   include author
   .blog-header
     h1.blog-title= page.title
-    p.lead.blog-description
-      | #{ "Escrito por " }
-      mixin author(page.metadata.author)
 
 block main
   .row
     .col-sm-12.blog-main
       .blog-post
-        p.blog-post-meta
-          span= moment.utc(page.date).format('DD. MMMM YYYY')
         section!= typogr(page.html).typogrify()
       //
         /.blog-post

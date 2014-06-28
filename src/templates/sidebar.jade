@@ -1,0 +1,42 @@
+.col-sm-3.col-sm-offset-1.blog-sidebar
+  .sidebar-module.sidebar-module-inset
+    h4 Sobre
+    p
+      !=contents['about.md'].html
+  .sidebar-module
+    - var lineHeight = 2.2;
+    - var archives = _.chain(env.helpers.getArticles(contents)).groupBy(function(item) {
+    -  return item.date.getFullYear()
+    - }).value()
+    - for (var archive in archives) {
+    - archives[archive] = _.groupBy(archives[archive], function(item){return item.date.getMonth();})
+    - }
+    - var month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    h4 Arquivos
+    - var yearsK = _.chain(archives).keys().reverse().value()
+    - for(var year in yearsK)
+      - months = archives[yearsK[year]]
+      h5.label.label-default= yearsK[year]
+      ol.list-unstyled
+        - var monthsK = _.chain(months).keys().reverse().value()
+        - for(month in monthsK){
+          each item in months[monthsK[month]]
+            li
+              a(href=item.url)= item.title
+        - }
+  .sidebar-module
+    h4 Elsewhere
+    ol.list-unstyled
+      li
+        a(href='#') GitHub
+      li
+        a(href='#') Twitter
+      li
+        a(href='#') Facebook
+  .sidebar-module
+    h4 RSS
+    ol.list-unstyled
+      li
+        a(href='/feed.xml') Feed RSS
+//
+  /.blog-sidebar

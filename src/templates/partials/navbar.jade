@@ -1,0 +1,8 @@
+.blog-masthead
+  .container
+    nav.blog-nav
+      a.blog-nav-item(href=locals.url)= locals.name
+      - var menu_items = _.chain(contents).value();
+        - each item in menu_items
+          a.blog-nav-item(href= item.url)= title
+      a.blog-nav-item(href='/archive.html') arquivos

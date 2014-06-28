@@ -1,28 +1,34 @@
 extends layout
 
-block content
+block main
   include author
-  each article in articles
-    article.article.intro
-      header
-        p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
-        h2
-          a(href=article.url)= article.title
-      section.content
-        | !{ typogr(article.intro).typogrify() }
-        if article.hasMore
-          p.more
-            a(href=article.url) more
-
-block prepend footer
-  div.nav
-    if prevPage
-      a(href=prevPage.url) « Newer
-    else
-      a(href='/archive.html') « Archives
-    if nextPage
-      a(href=nextPage.url) Next page »
-
-
-
+  .row
+    .col-sm-8.blog-main
+      each article in articles
+        .blog-post
+          h2.blog-post-title
+            a(href=article.url)= article.title
+          p.blog-post-meta
+            span= moment.utc(article.date).format('DD/MM/YYYY')
+          section
+            | !{ typogr(article.intro).typogrify() }
+            if article.hasMore
+              p.more
+                a(href=article.url) &rarr;
+        //
+          /.blog-post
+      ul.pager
+        if prevPage
+          li.previous
+            a(href=prevPage.url) &larr;
+        else
+          li.previous.disabled
+            a(href='#') &larr;
+        if nextPage
+          li.next
+            a(href=nextPage.url) &rarr;
+    //
+      /.blog-main
+    include sidebar
+  //
+    /.row
