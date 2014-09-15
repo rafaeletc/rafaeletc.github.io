@@ -3,7 +3,7 @@
     "url": "http://localhost:8080",
     "name": "rafaeletc",
     "owner": "Rafael etc",
-    "description": "Ramblings of an immor(t)al demigod"
+    "description": "nascido no século passado"
   },
   "plugins": [
     "./plugins/paginator.coffee",

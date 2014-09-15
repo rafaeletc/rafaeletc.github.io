@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
 }
 
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Warenhaus Typenhebel', sans-serif;
   font-size: 21px;
   line-height: 1.52;
   background-color: #f8f8f8;
@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-  font-style: italic;
+  font-style: normal;
   text-align: center;
   font-weight: 400;
   font-size: 1.4em;
@@ -88,9 +88,10 @@ hr {
 }
 
 .header h1 {
+  font-family: 'Gauge';
   font-size: 2.6em;
   text-align: center;
-  font-weight: 700;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -100,18 +101,19 @@ hr {
 }
 
 .header .author {
-  font-family: 'Merriweather', serif;
+  font-family: 'Warenhaus Typenhebel', serif;
   font-variant: small-caps;
   text-transform: lowercase;
   text-rendering: auto;
   text-align: center;
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
   letter-spacing: 1px;
 }
 
 .header .description {
   font-size: 1.2em;
-  font-style: italic;
+  font-style: normal;
   text-align: center;
   margin-top: -0.3em;
 }
@@ -119,7 +121,7 @@ hr {
 body.article-detail > header h1 {
   font-size: 2.5em;
   font-style: italic;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: -0.2em;
 }
 
@@ -161,8 +163,8 @@ footer .about {
 
 footer .copy {
   text-align: center;
-  font-size: 0.7em;
-  font-style: italic;
+  font-size: 0.9em;
+  font-style: normal;
   margin-top: 1em;
 }
 
@@ -181,9 +183,10 @@ footer .copy, footer .copy a {
 }
 
 .article header h2 {
-  font-style: italic;
+  font-family: 'Trocchi', serif;
+  font-style: normal;
   text-align: center;
-  font-weight: 400;
+  font-weight: normal;
   margin: 0.8em 0;
   font-size: 1.4em;
 }
@@ -219,10 +222,9 @@ footer .copy, footer .copy a {
 }
 
 .more, .date {
-  font-family: 'Merriweather', serif;
-  font-variant: small-caps;
+  font-family: 'RiseStarHand', cursive;
   text-transform: lowercase;
-  font-weight: 400;
+  font-weight: normal;
   text-rendering: auto;
   letter-spacing: 1px;
 }
@@ -240,7 +242,7 @@ footer .copy, footer .copy a {
   margin: 0;
   margin-left: 6.1em;
   margin-bottom: 0.5em;
-  font-style: italic;
+  font-style: normal;
 }
 
 .archive a, .archive span{
@@ -268,8 +270,7 @@ footer .copy, footer .copy a {
 .archive .year-label,
 .archive .month-label{
   width: 4em;
-  font-family: 'Merriweather', serif;
-  font-variant: small-caps;
+  font-family: 'RiseStarHand', serif;
   text-transform: lowercase;
   font-weight: 400;
   text-rendering: auto;

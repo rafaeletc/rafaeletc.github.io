@@ -10,9 +10,9 @@ block content
 	- for (var archive in archives) {
 	-	archives[archive] = _.groupBy(archives[archive], function(item){return item.date.getMonth();})
 	- }
-	- var month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+	- var month_names = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 	section.archive
-		h2 Archive
+		h2 Arquivo
 		ul
 			- var yearsK = _.chain(archives).keys().reverse().value()
 			- for(var year in yearsK)
@@ -31,4 +31,4 @@ block content
 										li(style='height:'+ lineHeight + 'em;line-height:'+ lineHeight + 'em;')
 											a(href=item.url)=item.title
 						- }
-						
+
