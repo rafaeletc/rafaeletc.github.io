@@ -2,7 +2,11 @@
   .container
     nav.blog-nav
       a.blog-nav-item(href=locals.url)= locals.name
-      - var menu_items = _.chain(contents).value();
-        - each item in menu_items
-          a.blog-nav-item(href= item.url)= title
-      a.blog-nav-item(href='/archive.html') arquivos
+      - var pages = _.chain(contents.pages._.directories).sortBy(function(item){return item.metadata.menu.order}).value();
+      for page in pages
+        span #{page}
+        console.log(page)
+        - if (page.metadata.menu.title == page.metadata.menu.title)
+          a.blog-nav-item.active(href= page.url) #{page.metadata.menu.title}
+        - else
+          a.blog-nav-item(href= page.url) #{page.metadata.menu.title}

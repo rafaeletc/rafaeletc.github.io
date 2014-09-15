@@ -1,5 +1,9 @@
 ---
-view: none
+title: Sobre
+template: page.jade
+menu:
+  title: sobre
+  order: 1
 ---
 
 Wintersmith is made by [Johan Nordberg][1] and licensed under the [MIT-license][2].

@@ -4,14 +4,12 @@
     p
       !=contents['about.md'].html
   .sidebar-module
-    - var lineHeight = 2.2;
     - var archives = _.chain(env.helpers.getArticles(contents)).groupBy(function(item) {
     -  return item.date.getFullYear()
     - }).value()
     - for (var archive in archives) {
     - archives[archive] = _.groupBy(archives[archive], function(item){return item.date.getMonth();})
     - }
-    - var month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     h4 Arquivos
     - var yearsK = _.chain(archives).keys().reverse().value()
     - for(var year in yearsK)
