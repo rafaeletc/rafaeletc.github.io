@@ -435,7 +435,8 @@ code.lang-markdown .bullet {
     margin-bottom: 0.6em;
   }
   .header .description {
-    font-size: 1em;
+    font-size: 0.6em;
+    padding-bottom: 0.6em;
   }
   .article {
     margin: 1em 0 2.5em;
