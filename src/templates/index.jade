@@ -1,3 +1,6 @@
+block vars
+  - var bodyclass = 'home';
+
 extends layout
 
 block content
@@ -6,14 +9,14 @@ block content
     article.article.intro
       header
         p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
+          span= moment(article.date).lang('pt-br').format('DD \\d\\e MMMM \\d\\e YYYY')
         h2
           a(href=article.url)= article.title
       section.content
         | !{ typogr(article.intro).typogrify() }
         if article.hasMore
           p.more
-            a(href=article.url) more
+            a(href=article.url) mais »
 
 block prepend footer
   div.nav

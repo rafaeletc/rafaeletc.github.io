@@ -16,6 +16,9 @@ block header
 
 block content
   article.article
+    header
+      p.date
+        span= moment(page.metadata.date).lang('pt-br').format('DD \\d\\e MMMM \\d\\e YYYY')
     section.content!= typogr(page.html).typogrify()
 
 block prepend footer

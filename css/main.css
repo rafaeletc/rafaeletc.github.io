@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
 }
 
 body {
-  font-family: 'Warenhaus Typenhebel', sans-serif;
+  font-family: 'Univers Else', serif;
   font-size: 21px;
   line-height: 1.52;
   background-color: #f8f8f8;
@@ -87,6 +87,20 @@ hr {
   margin: 3em 0 5em;
 }
 
+body.home .header,
+body.archives .header {
+  margin: 0;
+  padding: 3em 0 5em;
+  background: url('/img/bg.jpg') top center fixed;
+}
+
+body.home .logo,
+body.archives .logo {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 50%;
+}
+
 .header h1 {
   font-family: 'Gauge';
   font-size: 2.6em;
@@ -101,7 +115,7 @@ hr {
 }
 
 .header .author {
-  font-family: 'Warenhaus Typenhebel', serif;
+  font-family: 'Univers Else', serif;
   font-variant: small-caps;
   text-transform: lowercase;
   text-rendering: auto;
@@ -120,7 +134,7 @@ hr {
 
 body.article-detail > header h1 {
   font-size: 2.5em;
-  font-style: italic;
+  font-style: normal;
   font-weight: bold;
   margin-bottom: -0.2em;
 }
@@ -172,6 +186,26 @@ footer .copy, footer .copy a {
   color: #8e8e8e;
 }
 
+footer .copy a i {
+  font-size: 32px!important;
+}
+
+footer .copy a:hover i {
+  font-size: 42px!important;
+  color: #000;
+}
+
+footer .power {
+  font-family: 'Univers Else', serif;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  text-rendering: auto;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  font-size: small;
+  letter-spacing: 1px;
+}
 /* article */
 
 .article {
@@ -183,7 +217,7 @@ footer .copy, footer .copy a {
 }
 
 .article header h2 {
-  font-family: 'Trocchi', serif;
+  font-family: 'LS', serif;
   font-style: normal;
   text-align: center;
   font-weight: normal;
@@ -221,7 +255,7 @@ footer .copy, footer .copy a {
   width: 100%;
 }
 
-.more, .date {
+.date {
   font-family: 'RiseStarHand', cursive;
   text-transform: lowercase;
   font-weight: normal;

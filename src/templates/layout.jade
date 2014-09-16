@@ -1,7 +1,7 @@
 doctype html
 block vars
   - var bodyclass = null;
-html(lang='en')
+html(lang='pt')
   head
     block head
       meta(charset='utf-8')
@@ -13,8 +13,7 @@ html(lang='en')
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700,400italic,700italic')
       link(rel="stylesheet", media="screen", href="http://openfontlibrary.org/face/gauge", type="text/css")
-      link(rel="stylesheet", media="screen", href="http://openfontlibrary.org/face/trocchi-bold-stencil", type="text/css")
-      link(rel="stylesheet", media="screen", href="http://openfontlibrary.org/face/warenhaus-typenhebel", type="text/css")
+      link(rel="stylesheet", media="screen", href="http://openfontlibrary.org/face/univers-else", type="text/css")
       link(rel="stylesheet", media="screen", href="http://openfontlibrary.org/face/risestarhand", type="text/css")
       link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.0/css/cc-icons.min.css')
       link(rel='stylesheet', href='/css/main.css')
@@ -37,7 +36,11 @@ html(lang='en')
             !=contents['about.md'].html
           section.copy
             p
-              i.cc.cc-cc
-              | &nbsp;#{ new Date().getFullYear() } #{ locals.owner } - powered by&nbsp;
+              a(href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR", target="_blank")
+                i.cc.cc-by-sa
+              br.
+              | #{ new Date().getFullYear() } - #{ locals.owner }, #{ locals.description }
+            p
+              span.power powered by&nbsp;
               a(href='https://github.com/jnordberg/wintersmith') Wintersmith
               //- please leave the "powered by" if you use the design
