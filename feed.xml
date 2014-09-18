@@ -5,13 +5,25 @@
     <atom:link href="http://rafaeletc.github.io/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://rafaeletc.github.io</link>
     <description>nascido no século passado</description>
-    <pubDate>Mon, 15 Sep 2014 19:07:00 -0300</pubDate>
+    <pubDate>Thu, 18 Sep 2014 18:01:00 +0000</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
+      <title>Olha eu aqui, explanando outra vez</title>
+      <link>http://rafaeletc.github.io/articles/olha-eu-aqui-explanando-outra-vez/</link>
+      <pubDate>Thu, 18 Sep 2014 18:01:00 +0000</pubDate>
+      <guid isPermaLink="true">http://rafaeletc.github.io/articles/olha-eu-aqui-explanando-outra-vez/</guid>
+      <author></author>
+      <description>&lt;p&gt;Estou aqui assistindo a reprise do debate da TV Aparecida na última terça-feira (16/09/2014) e testando o &lt;a href=&quot;http://c9.io/&quot;&gt;Cloud9&lt;/a&gt; como editor de publicações e do código-fonte deste espaço.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Tudo indo bem bacana até então, olhe só:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://rafaeletc.github.io/articles/olha-eu-aqui-explanando-outra-vez/Captura%20de%20tela%20de%202014-09-18%2018:27:06.png&quot; alt=&quot;Print_Screen&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Olá, mundo!</title>
       <link>http://rafaeletc.github.io/articles/ola-mundo/</link>
-      <pubDate>Mon, 15 Sep 2014 19:07:00 -0300</pubDate>
+      <pubDate>Mon, 15 Sep 2014 19:07:00 +0000</pubDate>
       <guid isPermaLink="true">http://rafaeletc.github.io/articles/ola-mundo/</guid>
       <author></author>
       <description>&lt;p&gt;Começando a escrever um pouco sobre as coisas que estão acontecendo nas minhas máquinas&lt;/p&gt;

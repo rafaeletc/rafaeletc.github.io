@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
 }
 
 body {
-  font-family: 'Univers Else', serif;
+  font-family: 'Special Elite', cursive;
   font-size: 21px;
   line-height: 1.52;
   background-color: #f8f8f8;
@@ -102,10 +102,10 @@ body.archives .logo {
 }
 
 .header h1 {
-  font-family: 'Gauge';
+  font-family: 'Paytone One', sans-serif;
   font-size: 2.6em;
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
 }
 
@@ -115,7 +115,7 @@ body.archives .logo {
 }
 
 .header .author {
-  font-family: 'Univers Else', serif;
+  font-family: 'Special Elite', cursive;
   font-variant: small-caps;
   text-transform: lowercase;
   text-rendering: auto;
@@ -196,7 +196,7 @@ footer .copy a:hover i {
 }
 
 footer .power {
-  font-family: 'Univers Else', serif;
+  font-family: 'Special Elite', cursive;
   font-variant: small-caps;
   text-transform: lowercase;
   text-rendering: auto;
