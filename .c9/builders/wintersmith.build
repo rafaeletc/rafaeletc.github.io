@@ -1,8 +1,0 @@
-// Create a custom Cloud9 build system - similar to the Sublime build system
-// For more information see http://docs.c9.io:8080/#!/api/run-method-run
-{
-    "cmd" : ["node_modules/wintersmith/bin/wintersmith", "preview"],
-    "env" : {},
-    "info" : "Building $project_path/$file_name",
-    "working_dir": "src"
-}
