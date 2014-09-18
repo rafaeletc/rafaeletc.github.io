@@ -15,4 +15,5 @@
 # KDE directory preferences
 .directory
 
+.c9
 src/node_modules
